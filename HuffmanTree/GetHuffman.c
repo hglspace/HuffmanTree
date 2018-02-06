@@ -59,6 +59,9 @@ void HuffmanCodings(int n,char * * huffmanCode){
         huffmanCode[i]=(char *)malloc((n-start)*sizeof(char));
         strcpy(huffmanCode[i], &cd[start]);
     }
+    free(cd);
+    free(s1);
+    free(s2);
 }
 
 /*
