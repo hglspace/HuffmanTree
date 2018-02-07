@@ -43,7 +43,7 @@ void HuffmanCodings(int n,char * * huffmanCode){
         (HT+i)->weight=(HT+*s1)->weight+(HT+*s2)->weight;
     }
     
-    //从叶子到根逆向求每个字符的Huffman编码
+    //从叶子到根逆向求每个字符的Huffman编码 是从叶子到根，当然也可以从根到叶子
     cd[n-1]='\0';
     for(i=0;i<n;i++){
         start=n-1;
@@ -83,5 +83,12 @@ void Select(struct Node * HT,int n,int * s1,int * s2){
             *s2=i;
         }
     }
+}
+
+/*
+  根据字符串解码
+ */
+void Huffmandecode(struct Node * HT,char * data){
+    
 }
 
