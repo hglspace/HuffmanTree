@@ -35,5 +35,7 @@ int main(int argc, const char * argv[]) {
     printf("解码的结果是:");
     Huffmandecode(HT, data, n);
     printf("\n");
+    free(huffmanCode);
+    free(huffmanCode1);
     return 0;
 }
