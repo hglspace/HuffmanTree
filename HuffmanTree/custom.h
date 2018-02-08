@@ -16,5 +16,7 @@ struct Node{
     struct Node * lchild;
     struct Node * rchild;
 };
-void HuffmanCodings(int n,char * * huffmanCode);
+struct Node * HuffmanCodings(int n,char * * huffmanCode);
+void Huffmandecode(struct Node * HT,char * data,int n);
+void newCoding(struct Node * HT,int n,char * * huffmanCode);
 #endif /* custom_h */
