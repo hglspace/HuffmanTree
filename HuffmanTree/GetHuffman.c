@@ -110,7 +110,7 @@ void Huffmandecode(struct Node * HT,char * data,int n){
     }
 }
 
-//无栈非递归遍历Huffman树，求Huffman编码,从根到叶子
+//无栈非递归遍历Huffman树，求Huffman编码,从根到叶子（另一种根据Huffman树生成编码的方法）
 void newCoding(struct Node * HT,int n,char * * huffmanCode){
     char * cd=(char *)malloc(n*sizeof(char));
     int m=2*n-1,i,count=0;
